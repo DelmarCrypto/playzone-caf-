@@ -1,40 +1,105 @@
+/* styles.css */
+:root {
+    --primary-red: #dc2626;
+    --primary-blue: #3b82f6;
+    --bg-dark: #1f2937;
+    --text-light: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Press Start 2P', cursive;
-    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
-    color: #fff;
+    font-family: 'Press Start 2P', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Effet rétro border */
 .retro-border {
-    border: 4px solid;
-    border-image: linear-gradient(45deg, #ff0000, #00f, #fff) 1;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 4px #000;
 }
 
+/* Animation pulse lente */
+@keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Effet pixelisé pour les images */
 .pixelated {
     image-rendering: pixelated;
 }
 
-.hover-scale {
+/* Hover scale */
+.transform {
     transition: transform 0.3s ease;
 }
 
-.hover-scale:hover {
+.transform:hover {
     transform: scale(1.05);
 }
 
-.animate-pulse-slow {
-    animation: pulse 3s ease-in-out infinite;
+/* Focus pour accessibilité */
+a:focus, button:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
 }
 
-.gif-container {
-    z-index: 0;
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.9);
 }
 
-.gif-container img {
-    max-width: 100%;
-    height: auto;
+/* Hero Section */
+#home {
+    position: relative;
 }
 
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
+#home .gif-container img {
+    max-width: 100px;
+}
+
+/* Formulaires */
+input, textarea {
+    border: 2px solid #fff;
+    background: #111827;
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-red);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
