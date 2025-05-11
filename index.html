@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col font-['Press_Start_2P']">
     <!-- Header -->
     <header class="bg-black/80 py-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center px-4">
@@ -24,19 +24,25 @@
 
     <!-- Hero Section -->
     <section id="home" class="flex-1 flex items-center justify-center py-20 bg-[url('https://source.unsplash.com/random/1920x1080/?retro,gaming')] bg-cover bg-center relative">
-        <div class="gif-container absolute inset-0 opacity-50 flex items-center justify-center">
-            <img src="coffee-cup.png" alt="Coffee Icon" class="w-32 h-32 pixelated">
+        <div class="absolute inset-0 bg-black/70 z-0"></div>
+        <div class="gif-container absolute inset-0 opacity-60 flex items-center justify-center">
+            <img src="coffee-cup.png" alt="Coffee Icon" class="w-24 h-24 md:w-32 md:h-32 pixelated float-animation">
         </div>
         <div class="container mx-auto text-center px-4 relative z-10">
-            <h2 class="text-4xl md:text-6xl text-white retro-border p-4 bg-black/60 animate-pulse-slow">
-                Bienvenue au PlayZone Café Anjos
+            <h2 class="text-3xl md:text-5xl text-white retro-border p-4 bg-black/80 neon-glow animate-pulse-slow">
+                PlayZone Café Anjos : Café & PS5 Gaming
             </h2>
-            <p class="mt-4 text-lg md:text-xl text-gray-300">
-                Café chill & gaming rétro à Lisbonne. Boissons, snacks et PS5 t'attendent !
+            <p class="mt-4 text-sm md:text-lg text-gray-200 max-w-2xl mx-auto">
+                Café chill à Anjos avec gaming PS5, abonnements et tournois. Joins-toi pour café, snacks et fun !
             </p>
-            <a href="#contact" class="mt-6 inline-block bg-red-600 text-white px-6 py-3 retro-border hover:bg-red-700 hover-scale">
-                Réserve ta place
-            </a>
+            <div class="mt-6 space-x-4">
+                <a href="#gaming" class="inline-block bg-red-600 text-white px-6 py-3 retro-border hover:bg-red-700 hover-scale text-sm md:text-base">
+                    Découvre nos offres
+                </a>
+                <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 retro-border hover:bg-blue-700 hover-scale text-sm md:text-base">
+                    Réserve ta place
+                </a>
+            </div>
         </div>
     </section>
 
@@ -48,17 +54,17 @@
                 <div>
                     <h3 class="text-xl text-red-600 mb-4">Café Moderne & Chill</h3>
                     <p class="text-gray-300">
-                        Un espace cosy à Anjos pour étudiants, freelances et locaux. Savoure un café, des snacks et une ambiance détendue avec Wi-Fi fibre.
+                        Un espace cosy à Anjos pour étudiants, freelances et locaux. Savoure café, snacks et Wi-Fi fibre dans une ambiance détendue.
                     </p>
                     <div class="flex justify-center mt-4 space-x-4">
                         <img src="croissant.png" alt="Coffee Icon" class="w-16 h-16 pixelated">
-                        <img src="wifi.bleu.png" alt="Coffee Icon" class="w-16 h-16 pixelated">
+                        <img src="wifi.bleu.png" alt="Wi-Fi Icon" class="w-16 h-16 pixelated">
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-xl text-blue-600 mb-4">Gaming Rétro & PS5</h3>
+                    <h3 class="text-xl text-blue-600 mb-4">Gaming PS5 Évolutif</h3>
                     <p class="text-gray-300">
-                        Plonge dans une salle gaming avec PS5, écran 4K et fauteuils confortables. Tournois FIFA, Mario Kart et plus encore !
+                        Une salle gaming avec PS5, écran 4K et abonnements abordables. Participe à nos tournois FIFA et Mario Kart chaque week-end !
                     </p>
                     <div class="flex justify-center mt-4 space-x-4">
                         <img src="manette.png" alt="PS5 Icon" class="w-16 h-16 pixelated">
@@ -72,22 +78,22 @@
     <!-- Gaming Section -->
     <section id="gaming" class="py-16 bg-black">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl text-white retro-border p-4 mb-8">Zone Gaming</h2>
+            <h2 class="text-3xl text-white retro-border p-4 mb-8">Zone Gaming & Offres</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-gray-800 p-6 retro-border hover-scale">
                     <img src="PS5.png" alt="Rent PS5 Icon" class="mx-auto mb-2 w-16 pixelated">
                     <h3 class="text-lg text-red-600 mb-2">Location PS5</h3>
-                    <p class="text-gray-300">2 €/h ou 15 €/mois pour jouer sans limites.</p>
+                    <p class="text-gray-300">4 €/h (individuel) ou 10 €/h (groupe jusqu'à 3 pers.). Réduction étudiant : 3 €/h.</p>
                 </div>
                 <div class="bg-gray-800 p-6 retro-border hover-scale">
                     <img src="station.png" alt="Tournament Icon" class="mx-auto mb-2 w-16 pixelated">
-                    <h3 class="text-lg text-blue-600 mb-2">Tournois</h3>
-                    <p class="text-gray-300">Participe à nos tournois FIFA et Mario Kart chaque week-end !</p>
+                    <h3 class="text-lg text-blue-600 mb-2">Tournois & Abonnements</h3>
+                    <p class="text-gray-300">Tournois week-end : 10 €/pers. (boisson + snack). Abonnements : 20 €/mois (1h/j) ou 35 €/mois (2h/j + priorité tournois).</p>
                 </div>
                 <div class="bg-gray-800 p-6 retro-border hover-scale">
                     <img src="snack.png" alt="Combo Icon" class="mx-auto mb-2 w-16 pixelated">
-                    <h3 class="text-lg text-gray-400 mb-2">Combos</h3>
-                    <p class="text-gray-300">Snack + session gaming à prix réduit.</p>
+                    <h3 class="text-lg text-gray-400 mb-2">Offres Spéciales</h3>
+                    <p class="text-gray-300">Cartes prépayées pour colocs, forfaits afterwork, privatisation pour anniversaires ou soirées jeux.</p>
                 </div>
             </div>
         </div>
@@ -97,7 +103,7 @@
     <section id="contact" class="py-16 bg-gray-900">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl text-blue-400 retro-border p-4 mb-8">Nous Contacter</h2>
-            <p class="text-gray-300 mb-6">Rejoins-nous à Anjos ou envoie-nous un message !</p>
+            <p class="text-gray-300 mb-6">Rejoins-nous à Anjos, réserve ou contacte-nous pour investir dans le projet !</p>
             <form class="max-w-md mx-auto space-y-4">
                 <input type="text" placeholder="Nom" class="w-full p-3 bg-gray-800 text-white retro-border">
                 <input type="email" placeholder="Email" class="w-full p-3 bg-gray-800 text-white retro-border">
@@ -108,6 +114,9 @@
             </form>
             <p class="mt-6 text-gray-300">
                 Email: <a href="mailto:rodrigues.delmar@gmail.com" class="text-blue-400">rodrigues.delmar@gmail.com</a>
+            </p>
+            <p class="mt-2 text-gray-300">
+                Investisseurs : Contactez Snake pour plus d’infos sur le projet !
             </p>
         </div>
     </section>
