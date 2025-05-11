@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlayZone Café Anjos - Café & Gaming Rétro</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="min-h-screen flex flex-col font-['Press_Start_2P']">
     <!-- Header -->
-    <header class="bg-black/80 py-4 sticky top-0 z-10">
+    <header class="bg-black/95 py-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-2xl text-red-600 retro-border p-2">PlayZone Café Anjos</h1>
+            <img src="logo-cafe.png" alt="PlayZone Café Anjos Logo" class="h-12 md:h-16 pixelated neon-glow">
             <nav class="space-x-4">
-                <a href="#home" class="text-blue-400 hover:text-blue-600">Accueil</a>
-                <a href="#about" class="text-blue-400 hover:text-blue-600">Concept</a>
-                <a href="#gaming" class="text-blue-400 hover:text-blue-600">Gaming</a>
-                <a href="#contact" class="text-blue-400 hover:text-blue-600">Contact</a>
+                <a href="#home" class="text-blue-400 hover:text-neon-cyan">Accueil</a>
+                <a href="#about" class="text-blue-400 hover:text-neon-cyan">Concept</a>
+                <a href="#gaming" class="text-blue-400 hover:text-neon-cyan">Gaming</a>
+                <a href="#contact" class="text-blue-400 hover:text-neon-cyan">Contact</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="flex-1 flex items-center justify-center py-20 bg-[url('https://source.unsplash.com/random/1920x1080/?retro,gaming')] bg-cover bg-center relative">
+    <section id="home" class="flex-1 flex items-center justify-center py-20 bg-[url('https://images.unsplash.com/photo-1541167760492-0e1c6b5a86e1')] bg-cover bg-center relative">
         <div class="absolute inset-0 bg-black/70 z-0"></div>
         <div class="gif-container absolute inset-0 opacity-60 flex items-center justify-center">
+            <img src="coffee-cup.png" alt="Coffee Icon" class="w-24 h-24 md:w-32 md:h-32 pixelated float-animation">
         </div>
         <div class="container mx-auto text-center px-4 relative z-10">
             <h2 class="text-3xl md:text-5xl text-white retro-border p-4 bg-black/80 neon-glow animate-pulse-slow">
@@ -38,7 +39,7 @@
                 <a href="#gaming" class="inline-block bg-red-600 text-white px-6 py-3 retro-border hover:bg-red-700 hover-scale text-sm md:text-base">
                     Découvre nos offres
                 </a>
-                <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 retro-border hover:bg-blue-700 hover-scale text-sm md:text-base">
+                <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 retro-border hover:bg-red-700 hover-scale text-sm md:text-base">
                     Réserve ta place
                 </a>
             </div>
